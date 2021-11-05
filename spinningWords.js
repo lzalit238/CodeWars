@@ -40,3 +40,10 @@ function spinWords(string) {
     return string;
   }
 }
+
+//spins all words
+function spinWords(string) {
+    let splitString = string.split(" ").map(word => word.split("").reverse().join(""));
+  return splitString.join(" ");
+}
+spinWords("Hello There Lily");
